@@ -1,6 +1,6 @@
 ﻿namespace UserManagemet.Entities;
 
-public class User
+internal class User
 {
     public UserId Id { get; set; }
     public Email Email { get; set; }

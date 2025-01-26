@@ -1,12 +1,12 @@
 ﻿namespace UserManagemet.Entities;
 
-public enum EmailTypes
+internal enum EmailTypes
 {
     NotVerified,
     Verified
 }
 
-public class EmailType
+internal class EmailType
 {
 
 }

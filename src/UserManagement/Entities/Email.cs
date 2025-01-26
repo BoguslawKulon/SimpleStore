@@ -1,3 +1,3 @@
 ﻿namespace UserManagemet.Entities;
 
-public record Email(string Value);
+internal record Email(string Value);

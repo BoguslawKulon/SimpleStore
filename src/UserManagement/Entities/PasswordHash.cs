@@ -1,3 +1,3 @@
 ﻿namespace UserManagemet.Entities;
 
-public record PasswordHash(string Password);
+internal record PasswordHash(string Password);
