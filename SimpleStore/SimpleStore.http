@@ -1,6 +1,0 @@
-@SimpleStore_HostAddress = http://localhost:5052
-
-GET {{SimpleStore_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
