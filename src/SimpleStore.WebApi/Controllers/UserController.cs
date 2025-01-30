@@ -34,6 +34,8 @@ public class UserController : ControllerBase
             var errors = ModelState.Values.SelectMany(v => v.Errors).Select(e => e.ErrorMessage);
             return BadRequest(ModelState);
         }
+
+        return Ok();
     }
 
     // PUT api/<UserController>/5
