@@ -1,9 +1,3 @@
-﻿using UserManagemet.Entities;
+﻿namespace UserManagement.Dtos;
 
-namespace UserManagement.Dtos;
-internal class UserDataDto
-{
-    public UserId Id { get; set; }
-    public PersonName Name { get; set; }
-    public Email Email { get; set; }
-}
+public record UserDataDto(string FirstName, string LastName, string Email, string PhoneNumber);
