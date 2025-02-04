@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Identity;
 using SimpleStore.WebApi.Controllers;
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,6 +8,11 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddAuthorization();
+builder.Services.AddAuthentication().AddCookie(IdentityConstants.ApplicationScheme);
+
+//builder.Services.AddIdentityCore<>();
 
 var app = builder.Build();
 
