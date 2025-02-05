@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Identity;
 using SimpleStore.WebApi.Controllers;
+using UserManagement.Models;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -12,7 +13,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddAuthorization();
 builder.Services.AddAuthentication().AddCookie(IdentityConstants.ApplicationScheme);
 
-//builder.Services.AddIdentityCore<>();
+builder.Services.AddIdentityCore<User>();
 
 var app = builder.Build();
 
